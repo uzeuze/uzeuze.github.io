@@ -11,11 +11,11 @@ import Contact from './components/Contact';
 
 
 const routes = (
-  <Route path="/" mapMenuTitle="Home" component={App}>
+  <Route path="/" component={App}>
     <IndexRoute component={Home} />
-    <Route path="/articles" mapMenuTitle="Articles" component={Articles} />
-    <Route path="/contact" mapMenuTitle="Contact" component={Contact} />
-    <Route path="*" mapMenuTitle="Page Not Found" component={PageNotFound} />
+    <Route path="/articles" component={Articles} />
+    <Route path="/contact" component={Contact} />
+    <Route path="*" component={PageNotFound} />
   </Route>
 );
 
