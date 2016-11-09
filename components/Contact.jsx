@@ -15,7 +15,7 @@ export default function Contact() {
             <ControlLabel>Message</ControlLabel>
             <FormControl componentClass="textarea" name="message" placeholder="Your message" />
           </FormGroup>
-          <Button type="submit" value="send">
+          <Button bsStyle="primary" type="submit" value="send">
             Submit
           </Button>
         </Form>
