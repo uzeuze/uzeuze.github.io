@@ -8,7 +8,13 @@ export default class Articles extends Component {
         <h1>Articles</h1>
         <ul>
           <li>
-            <Link to="/articles/to-do-list">To Do List Tutorial</Link>
+            <Link to="/articles/to-do-list-tutorial">To Do List Tutorial</Link>
+          </li>
+          <li>
+            <Link to="/articles/hangman-game-tutorial">Hangman Game Tutorial</Link>
+          </li>
+          <li>
+            <Link to="/articles/library-app-tutorial">Library App Tutorial</Link>
           </li>
         </ul>
       </div>

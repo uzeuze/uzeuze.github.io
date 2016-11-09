@@ -13,6 +13,7 @@
   "license": "MIT",
   "dependencies": {
     "current-input": "^1.1.0",
+    "marked": "^0.3.6",
     "react": "^15.1.0",
     "react-bootstrap": "^0.30.6",
     "react-dom": "^15.1.0",

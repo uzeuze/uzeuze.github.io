@@ -4,7 +4,7 @@ import { Link } from 'react-router';
 class App extends Component {
   render() {
     return (
-      <div>
+      <div className="container">
         <ul className="nav nav-tabs App__navbar">
           <li className="nav__item"><Link to="/" className="nav__link" activeClassName="nav__link--active" onlyActiveOnIndex={true}>Home</Link></li>
           <li className="nav__item"><Link to="/articles" className="nav__link" activeClassName="nav__link--active">Articles</Link></li>
