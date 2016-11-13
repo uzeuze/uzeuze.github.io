@@ -12,7 +12,7 @@ function Home() {
       </ul>
       <h4>Freecodecamp API Projects</h4>
       <ul>
-        <li><a href="http://url-shortener-uze.herokuapp.com/" target="_blank">URL SHORTENER MICROSERVICE</a></li>
+        <li><a href="http://url-shortener-uze.herokuapp.com/" target="_blank">URL Shortener Microservice</a></li>
         <li><a href="https://header-parser-api-uze.herokuapp.com/api/whoami" target="_blank">Request Header Parser Microservice</a></li>
         <li><a href="https://timestamp-api-uze.herokuapp.com/" target="_blank">Timestamp Microservice</a></li>
       </ul>
