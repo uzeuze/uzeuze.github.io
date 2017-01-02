@@ -16,7 +16,7 @@ import RomanConverterAPI from './components/articles/RomanConverterAPI';
 const routes = (
   <Route path="/" component={App}>
     <IndexRoute component={Home} />
-    <Route path="/articles" component={Articles}/>
+    <Route path="/articles" component={Articles} />
     <Route path="/articles/to-do-list-tutorial" component={ToDoList} />
     <Route path="/articles/hangman-game-tutorial" component={HangmanGame} />
     <Route path="/articles/library-app-tutorial" component={LibraryApp} />
