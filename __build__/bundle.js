@@ -63,35 +63,35 @@
 	
 	var _App2 = _interopRequireDefault(_App);
 	
-	var _Home = __webpack_require__(/*! ./components/Home */ 503);
+	var _Home = __webpack_require__(/*! ./components/Home */ 506);
 	
 	var _Home2 = _interopRequireDefault(_Home);
 	
-	var _PageNotFound = __webpack_require__(/*! ./components/PageNotFound */ 504);
+	var _PageNotFound = __webpack_require__(/*! ./components/PageNotFound */ 507);
 	
 	var _PageNotFound2 = _interopRequireDefault(_PageNotFound);
 	
-	var _Articles = __webpack_require__(/*! ./components/Articles */ 505);
+	var _Articles = __webpack_require__(/*! ./components/Articles */ 508);
 	
 	var _Articles2 = _interopRequireDefault(_Articles);
 	
-	var _Contact = __webpack_require__(/*! ./components/Contact */ 506);
+	var _Contact = __webpack_require__(/*! ./components/Contact */ 509);
 	
 	var _Contact2 = _interopRequireDefault(_Contact);
 	
-	var _ToDoList = __webpack_require__(/*! ./components/articles/ToDoList */ 507);
+	var _ToDoList = __webpack_require__(/*! ./components/articles/ToDoList */ 510);
 	
 	var _ToDoList2 = _interopRequireDefault(_ToDoList);
 	
-	var _HangmanGame = __webpack_require__(/*! ./components/articles/HangmanGame */ 509);
+	var _HangmanGame = __webpack_require__(/*! ./components/articles/HangmanGame */ 512);
 	
 	var _HangmanGame2 = _interopRequireDefault(_HangmanGame);
 	
-	var _LibraryApp = __webpack_require__(/*! ./components/articles/LibraryApp */ 510);
+	var _LibraryApp = __webpack_require__(/*! ./components/articles/LibraryApp */ 513);
 	
 	var _LibraryApp2 = _interopRequireDefault(_LibraryApp);
 	
-	var _RomanConverterAPI = __webpack_require__(/*! ./components/articles/RomanConverterAPI */ 511);
+	var _RomanConverterAPI = __webpack_require__(/*! ./components/articles/RomanConverterAPI */ 514);
 	
 	var _RomanConverterAPI2 = _interopRequireDefault(_RomanConverterAPI);
 	
@@ -28717,7 +28717,7 @@
 	
 	var _reactBootstrap = __webpack_require__(/*! react-bootstrap */ 253);
 	
-	var _reactRouterBootstrap = __webpack_require__(/*! react-router-bootstrap */ 512);
+	var _reactRouterBootstrap = __webpack_require__(/*! react-router-bootstrap */ 503);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -48231,6 +48231,221 @@
 
 /***/ },
 /* 503 */
+/*!***********************************************!*\
+  !*** ./~/react-router-bootstrap/lib/index.js ***!
+  \***********************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	exports.__esModule = true;
+	exports.LinkContainer = exports.IndexLinkContainer = undefined;
+	
+	var _IndexLinkContainer2 = __webpack_require__(/*! ./IndexLinkContainer */ 504);
+	
+	var _IndexLinkContainer3 = _interopRequireDefault(_IndexLinkContainer2);
+	
+	var _LinkContainer2 = __webpack_require__(/*! ./LinkContainer */ 505);
+	
+	var _LinkContainer3 = _interopRequireDefault(_LinkContainer2);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	exports.IndexLinkContainer = _IndexLinkContainer3.default;
+	exports.LinkContainer = _LinkContainer3.default;
+
+/***/ },
+/* 504 */
+/*!************************************************************!*\
+  !*** ./~/react-router-bootstrap/lib/IndexLinkContainer.js ***!
+  \************************************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	exports.__esModule = true;
+	
+	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+	
+	var _react = __webpack_require__(/*! react */ 1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _LinkContainer = __webpack_require__(/*! ./LinkContainer */ 505);
+	
+	var _LinkContainer2 = _interopRequireDefault(_LinkContainer);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	// Don't use a stateless function, to allow users to set a ref.
+	/* eslint-disable react/prefer-stateless-function */
+	var IndexLinkContainer = function (_React$Component) {
+	  _inherits(IndexLinkContainer, _React$Component);
+	
+	  function IndexLinkContainer() {
+	    _classCallCheck(this, IndexLinkContainer);
+	
+	    return _possibleConstructorReturn(this, _React$Component.apply(this, arguments));
+	  }
+	
+	  IndexLinkContainer.prototype.render = function render() {
+	    return _react2.default.createElement(_LinkContainer2.default, _extends({}, this.props, { onlyActiveOnIndex: true }));
+	  };
+	
+	  return IndexLinkContainer;
+	}(_react2.default.Component);
+	/* eslint-enable react/prefer-stateless-function */
+	
+	
+	exports.default = IndexLinkContainer;
+	module.exports = exports['default'];
+
+/***/ },
+/* 505 */
+/*!*******************************************************!*\
+  !*** ./~/react-router-bootstrap/lib/LinkContainer.js ***!
+  \*******************************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	exports.__esModule = true;
+	
+	var _react = __webpack_require__(/*! react */ 1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; } // This is largely taken from react-router/lib/Link.
+	
+	function isLeftClickEvent(event) {
+	  return event.button === 0;
+	}
+	
+	function isModifiedEvent(event) {
+	  return !!(event.metaKey || event.altKey || event.ctrlKey || event.shiftKey);
+	}
+	
+	function createLocationDescriptor(to, query, hash, state) {
+	  if (query || hash || state) {
+	    return { pathname: to, query: query, hash: hash, state: state };
+	  }
+	
+	  return to;
+	}
+	
+	var propTypes = {
+	  onlyActiveOnIndex: _react2.default.PropTypes.bool.isRequired,
+	  to: _react2.default.PropTypes.oneOfType([_react2.default.PropTypes.string, _react2.default.PropTypes.object]).isRequired,
+	  query: _react2.default.PropTypes.string,
+	  hash: _react2.default.PropTypes.string,
+	  state: _react2.default.PropTypes.object,
+	  action: _react2.default.PropTypes.oneOf(['push', 'replace']).isRequired,
+	  onClick: _react2.default.PropTypes.func,
+	  active: _react2.default.PropTypes.bool,
+	  target: _react2.default.PropTypes.string,
+	  children: _react2.default.PropTypes.node.isRequired
+	};
+	
+	var contextTypes = {
+	  router: _react2.default.PropTypes.object
+	};
+	
+	var defaultProps = {
+	  onlyActiveOnIndex: false,
+	  action: 'push'
+	};
+	
+	var LinkContainer = function (_React$Component) {
+	  _inherits(LinkContainer, _React$Component);
+	
+	  function LinkContainer() {
+	    var _temp, _this, _ret;
+	
+	    _classCallCheck(this, LinkContainer);
+	
+	    for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+	      args[_key] = arguments[_key];
+	    }
+	
+	    return _ret = (_temp = (_this = _possibleConstructorReturn(this, _React$Component.call.apply(_React$Component, [this].concat(args))), _this), _this.onClick = function (event) {
+	      var _this$props = _this.props;
+	      var to = _this$props.to;
+	      var query = _this$props.query;
+	      var hash = _this$props.hash;
+	      var state = _this$props.state;
+	      var children = _this$props.children;
+	      var onClick = _this$props.onClick;
+	      var target = _this$props.target;
+	      var action = _this$props.action;
+	
+	
+	      if (children.props.onClick) {
+	        children.props.onClick(event);
+	      }
+	
+	      if (onClick) {
+	        onClick(event);
+	      }
+	
+	      if (target || event.defaultPrevented || isModifiedEvent(event) || !isLeftClickEvent(event)) {
+	        return;
+	      }
+	
+	      event.preventDefault();
+	
+	      _this.context.router[action](createLocationDescriptor(to, query, hash, state));
+	    }, _temp), _possibleConstructorReturn(_this, _ret);
+	  }
+	
+	  LinkContainer.prototype.render = function render() {
+	    var router = this.context.router;
+	    var _props = this.props;
+	    var onlyActiveOnIndex = _props.onlyActiveOnIndex;
+	    var to = _props.to;
+	    var children = _props.children;
+	
+	    var props = _objectWithoutProperties(_props, ['onlyActiveOnIndex', 'to', 'children']);
+	
+	    props.onClick = this.onClick;
+	
+	    // Ignore if rendered outside Router context; simplifies unit testing.
+	    if (router) {
+	      props.href = router.createHref(to);
+	
+	      if (props.active == null) {
+	        props.active = router.isActive(to, onlyActiveOnIndex);
+	      }
+	    }
+	
+	    return _react2.default.cloneElement(_react2.default.Children.only(children), props);
+	  };
+	
+	  return LinkContainer;
+	}(_react2.default.Component);
+	
+	LinkContainer.propTypes = propTypes;
+	LinkContainer.contextTypes = contextTypes;
+	LinkContainer.defaultProps = defaultProps;
+	
+	exports.default = LinkContainer;
+	module.exports = exports['default'];
+
+/***/ },
+/* 506 */
 /*!*****************************!*\
   !*** ./components/Home.jsx ***!
   \*****************************/
@@ -48242,574 +48457,135 @@
 	  value: true
 	});
 	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
 	var _react = __webpack_require__(/*! react */ 1);
 	
 	var _react2 = _interopRequireDefault(_react);
 	
 	var _reactBootstrap = __webpack_require__(/*! react-bootstrap */ 253);
 	
+	var _projects_data = __webpack_require__(/*! ./projects_data */ 516);
+	
+	var _projects_data2 = _interopRequireDefault(_projects_data);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
-	function Home() {
-	  return _react2.default.createElement(
-	    'div',
-	    { className: 'Home' },
-	    _react2.default.createElement(
-	      'section',
-	      { className: 'Home__hero' },
-	      _react2.default.createElement(
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	var Home = function (_Component) {
+	  _inherits(Home, _Component);
+	
+	  function Home() {
+	    _classCallCheck(this, Home);
+	
+	    var _this = _possibleConstructorReturn(this, (Home.__proto__ || Object.getPrototypeOf(Home)).call(this));
+	
+	    _this.state = {
+	      showProjects: false
+	    };
+	    return _this;
+	  }
+	
+	  _createClass(Home, [{
+	    key: 'renderProject',
+	    value: function renderProject(project) {
+	      return _react2.default.createElement(
+	        _reactBootstrap.Col,
+	        { md: 6, key: project.url },
+	        _react2.default.createElement(
+	          'a',
+	          { href: project.url, target: '_blank' },
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'Project__item', id: project['image-name'] },
+	            project.title
+	          )
+	        ),
+	        _react2.default.createElement(
+	          'h4',
+	          { className: 'Project__item_title' },
+	          project.title
+	        )
+	      );
+	    }
+	  }, {
+	    key: 'render',
+	    value: function render() {
+	      var _this2 = this;
+	
+	      var projects = void 0;
+	      if (this.state.showProjects) {
+	        projects = _projects_data2.default;
+	      } else {
+	        projects = _projects_data2.default.slice(0, 4);
+	      }
+	      return _react2.default.createElement(
 	        'div',
-	        { className: 'Home__hero_content container' },
+	        { className: 'Home' },
 	        _react2.default.createElement(
-	          'h1',
-	          { className: 'Home__hero_title' },
-	          'WEB & MOBILE DEVELOPMENT'
-	        ),
-	        _react2.default.createElement(
-	          'p',
-	          { className: 'Home__hero_subtitle' },
-	          'Hello! I\'m Egemen Can Uze. I design and develop web and mobile applications.'
-	        )
-	      )
-	    ),
-	    _react2.default.createElement(
-	      'section',
-	      { className: 'Home__projects text-center' },
-	      _react2.default.createElement(
-	        'h2',
-	        null,
-	        'PROJECTS'
-	      ),
-	      _react2.default.createElement(
-	        _reactBootstrap.Grid,
-	        null,
-	        _react2.default.createElement(
-	          _reactBootstrap.Row,
-	          null,
+	          'section',
+	          { className: 'Home__hero' },
 	          _react2.default.createElement(
-	            _reactBootstrap.Col,
-	            { md: 6 },
+	            'div',
+	            { className: 'Home__hero_content container' },
 	            _react2.default.createElement(
-	              'a',
-	              { href: 'http://www.papirusapp.com/', target: '_blank' },
-	              _react2.default.createElement(
-	                'div',
-	                { className: 'Project__item', id: 'papirus' },
-	                'papirus'
-	              )
+	              'h1',
+	              { className: 'Home__hero_title' },
+	              'WEB & MOBILE DEVELOPMENT'
 	            ),
 	            _react2.default.createElement(
-	              'h4',
-	              { className: 'Project__item_title' },
-	              'Papirus'
-	            )
-	          ),
-	          _react2.default.createElement(
-	            _reactBootstrap.Col,
-	            { md: 6 },
-	            _react2.default.createElement(
-	              'a',
-	              { href: 'http://polls-uzeuze.herokuapp.com/', target: '_blank' },
-	              _react2.default.createElement(
-	                'div',
-	                { className: 'Project__item', id: 'voting-app' },
-	                'Voting'
-	              )
-	            ),
-	            _react2.default.createElement(
-	              'h4',
-	              { className: 'Project__item_title' },
-	              'Voting App'
+	              'p',
+	              { className: 'Home__hero_subtitle' },
+	              'Hello! I\'m Egemen Can Uze. I design and develop web and mobile applications.'
 	            )
 	          )
 	        ),
 	        _react2.default.createElement(
-	          _reactBootstrap.Row,
-	          null,
+	          'section',
+	          { className: 'Home__projects text-center' },
 	          _react2.default.createElement(
-	            _reactBootstrap.Col,
-	            { md: 6 },
+	            'h2',
+	            null,
+	            'PROJECTS'
+	          ),
+	          _react2.default.createElement(
+	            _reactBootstrap.Grid,
+	            null,
 	            _react2.default.createElement(
-	              'a',
-	              { href: 'http://www.uz-energy.com/', target: '_blank' },
-	              _react2.default.createElement(
-	                'div',
-	                { className: 'Project__item', id: 'uzenerji' },
-	                'uzenerji'
-	              )
-	            ),
-	            _react2.default.createElement(
-	              'h4',
-	              { className: 'Project__item_title' },
-	              'Uzenerji'
+	              _reactBootstrap.Row,
+	              null,
+	              projects.map(function (project) {
+	                return _this2.renderProject(project);
+	              })
 	            )
 	          ),
 	          _react2.default.createElement(
-	            _reactBootstrap.Col,
-	            { md: 6 },
-	            _react2.default.createElement(
-	              'a',
-	              { href: 'http://codepen.io/uzeuze/full/XKXKzY/', target: '_blank' },
-	              _react2.default.createElement(
-	                'div',
-	                { className: 'Project__item', id: 'rembrandt-tribute' },
-	                'rembrandt tribute'
-	              )
-	            ),
-	            _react2.default.createElement(
-	              'h4',
-	              { className: 'Project__item_title' },
-	              'Rembrandt Tribute Page'
-	            )
-	          )
-	        ),
-	        _react2.default.createElement(
-	          _reactBootstrap.Row,
-	          null,
-	          _react2.default.createElement(
-	            _reactBootstrap.Col,
-	            { md: 6 },
-	            _react2.default.createElement(
-	              'a',
-	              { href: 'http://codepen.io/uzeuze/full/GNgpPj/', target: '_blank' },
-	              _react2.default.createElement(
-	                'div',
-	                { className: 'Project__item', id: 'hangman' },
-	                'hangman'
-	              )
-	            ),
-	            _react2.default.createElement(
-	              'h4',
-	              { className: 'Project__item_title' },
-	              'hangman'
-	            )
-	          ),
-	          _react2.default.createElement(
-	            _reactBootstrap.Col,
-	            { md: 6 },
-	            _react2.default.createElement(
-	              'a',
-	              { href: 'http://codepen.io/uzeuze/full/xRbmWw/', target: '_blank' },
-	              _react2.default.createElement(
-	                'div',
-	                { className: 'Project__item', id: 'library' },
-	                'library'
-	              )
-	            ),
-	            _react2.default.createElement(
-	              'h4',
-	              { className: 'Project__item_title' },
-	              'library'
-	            )
-	          )
-	        ),
-	        _react2.default.createElement(
-	          _reactBootstrap.Row,
-	          null,
-	          _react2.default.createElement(
-	            _reactBootstrap.Col,
-	            { md: 6 },
-	            _react2.default.createElement(
-	              'a',
-	              { href: 'https://codepen.io/uzeuze/full/aNedqR/', target: '_blank' },
-	              _react2.default.createElement(
-	                'div',
-	                { className: 'Project__item', id: 'calculator' },
-	                'calculator'
-	              )
-	            ),
-	            _react2.default.createElement(
-	              'h4',
-	              { className: 'Project__item_title' },
-	              'calculator'
-	            )
-	          ),
-	          _react2.default.createElement(
-	            _reactBootstrap.Col,
-	            { md: 6 },
-	            _react2.default.createElement(
-	              'a',
-	              { href: 'http://codepen.io/uzeuze/full/dMxaPb/', target: '_blank' },
-	              _react2.default.createElement(
-	                'div',
-	                { className: 'Project__item', id: 'pomodoro' },
-	                'pomodoro'
-	              )
-	            ),
-	            _react2.default.createElement(
-	              'h4',
-	              { className: 'Project__item_title' },
-	              'pomodoro'
-	            )
-	          )
-	        ),
-	        _react2.default.createElement(
-	          _reactBootstrap.Row,
-	          null,
-	          _react2.default.createElement(
-	            _reactBootstrap.Col,
-	            { md: 6 },
-	            _react2.default.createElement(
-	              'a',
-	              { href: 'http://codepen.io/uzeuze/full/dOyGYN/', target: '_blank' },
-	              _react2.default.createElement(
-	                'div',
-	                { className: 'Project__item', id: 'todo' },
-	                'todo'
-	              )
-	            ),
-	            _react2.default.createElement(
-	              'h4',
-	              { className: 'Project__item_title' },
-	              'todo'
-	            )
-	          ),
-	          _react2.default.createElement(
-	            _reactBootstrap.Col,
-	            { md: 6 },
-	            _react2.default.createElement(
-	              'a',
-	              { href: 'http://codepen.io/uzeuze/full/BzjVaP/', target: '_blank' },
-	              _react2.default.createElement(
-	                'div',
-	                { className: 'Project__item', id: 'quote-generator' },
-	                'quote generator'
-	              )
-	            ),
-	            _react2.default.createElement(
-	              'h4',
-	              { className: 'Project__item_title' },
-	              'quote generator'
-	            )
-	          )
-	        ),
-	        _react2.default.createElement(
-	          _reactBootstrap.Row,
-	          null,
-	          _react2.default.createElement(
-	            _reactBootstrap.Col,
-	            { md: 6 },
-	            _react2.default.createElement(
-	              'a',
-	              { href: 'http://codepen.io/uzeuze/full/BzNWYG/', target: '_blank' },
-	              _react2.default.createElement(
-	                'div',
-	                { className: 'Project__item', id: 'markdown-previewer' },
-	                'markdown-previewer'
-	              )
-	            ),
-	            _react2.default.createElement(
-	              'h4',
-	              { className: 'Project__item_title' },
-	              'markdown-previewer'
-	            )
-	          ),
-	          _react2.default.createElement(
-	            _reactBootstrap.Col,
-	            { md: 6 },
-	            _react2.default.createElement(
-	              'a',
-	              { href: 'http://codepen.io/uzeuze/full/BzowMy/', target: '_blank' },
-	              _react2.default.createElement(
-	                'div',
-	                { className: 'Project__item', id: 'camper-leaderboard' },
-	                'camper-leaderboard'
-	              )
-	            ),
-	            _react2.default.createElement(
-	              'h4',
-	              { className: 'Project__item_title' },
-	              'camper-leaderboard'
-	            )
-	          )
-	        ),
-	        _react2.default.createElement(
-	          _reactBootstrap.Row,
-	          null,
-	          _react2.default.createElement(
-	            _reactBootstrap.Col,
-	            { md: 6 },
-	            _react2.default.createElement(
-	              'a',
-	              { href: 'http://codepen.io/uzeuze/full/ONdWzm/', target: '_blank' },
-	              _react2.default.createElement(
-	                'div',
-	                { className: 'Project__item', id: 'weather-api' },
-	                'weather-api'
-	              )
-	            ),
-	            _react2.default.createElement(
-	              'h4',
-	              { className: 'Project__item_title' },
-	              'weather-api'
-	            )
-	          ),
-	          _react2.default.createElement(
-	            _reactBootstrap.Col,
-	            { md: 6 },
-	            _react2.default.createElement(
-	              'a',
-	              { href: 'http://codepen.io/uzeuze/full/RaOKEP/', target: '_blank' },
-	              _react2.default.createElement(
-	                'div',
-	                { className: 'Project__item', id: 'wikipedia-viewer' },
-	                'wikipedia-viewer'
-	              )
-	            ),
-	            _react2.default.createElement(
-	              'h4',
-	              { className: 'Project__item_title' },
-	              'wikipedia-viewer'
-	            )
-	          )
-	        ),
-	        _react2.default.createElement(
-	          _reactBootstrap.Row,
-	          null,
-	          _react2.default.createElement(
-	            _reactBootstrap.Col,
-	            { md: 6 },
-	            _react2.default.createElement(
-	              'a',
-	              { href: 'http://codepen.io/uzeuze/full/BzBYNL/', target: '_blank' },
-	              _react2.default.createElement(
-	                'div',
-	                { className: 'Project__item', id: 'simon-game' },
-	                'simon-game'
-	              )
-	            ),
-	            _react2.default.createElement(
-	              'h4',
-	              { className: 'Project__item_title' },
-	              'simon-game'
-	            )
-	          ),
-	          _react2.default.createElement(
-	            _reactBootstrap.Col,
-	            { md: 6 },
-	            _react2.default.createElement(
-	              'a',
-	              { href: 'http://codepen.io/uzeuze/full/rLxxGE/', target: '_blank' },
-	              _react2.default.createElement(
-	                'div',
-	                { className: 'Project__item', id: 'recipe-box' },
-	                'recipe-box'
-	              )
-	            ),
-	            _react2.default.createElement(
-	              'h4',
-	              { className: 'Project__item_title' },
-	              'recipe-box'
-	            )
+	            'button',
+	            {
+	              className: 'btn btn-warning',
+	              onClick: function onClick() {
+	                return _this2.setState({ showProjects: !_this2.state.showProjects });
+	              }
+	            },
+	            this.state.showProjects ? 'SHOW LESS' : 'ALL PROJECTS'
 	          )
 	        )
-	      )
-	    ),
-	    _react2.default.createElement(
-	      'h3',
-	      null,
-	      'My Works'
-	    ),
-	    _react2.default.createElement(
-	      'ul',
-	      null,
-	      _react2.default.createElement(
-	        'li',
-	        null,
-	        _react2.default.createElement(
-	          'a',
-	          { href: 'http://www.papirusapp.com/', target: '_blank' },
-	          'Papirus App'
-	        )
-	      ),
-	      _react2.default.createElement(
-	        'li',
-	        null,
-	        _react2.default.createElement(
-	          'a',
-	          { href: 'http://www.uz-energy.com/', target: '_blank' },
-	          'Uz-Enerji'
-	        )
-	      )
-	    ),
-	    _react2.default.createElement(
-	      'h4',
-	      null,
-	      'Freecodecamp API Projects'
-	    ),
-	    _react2.default.createElement(
-	      'ul',
-	      null,
-	      _react2.default.createElement(
-	        'li',
-	        null,
-	        _react2.default.createElement(
-	          'a',
-	          { href: 'http://url-shortener-uze.herokuapp.com/', target: '_blank' },
-	          'URL Shortener Microservice'
-	        )
-	      ),
-	      _react2.default.createElement(
-	        'li',
-	        null,
-	        _react2.default.createElement(
-	          'a',
-	          { href: 'https://header-parser-api-uze.herokuapp.com/api/whoami', target: '_blank' },
-	          'Request Header Parser Microservice'
-	        )
-	      ),
-	      _react2.default.createElement(
-	        'li',
-	        null,
-	        _react2.default.createElement(
-	          'a',
-	          { href: 'https://timestamp-api-uze.herokuapp.com/', target: '_blank' },
-	          'Timestamp Microservice'
-	        )
-	      )
-	    ),
-	    _react2.default.createElement(
-	      'h4',
-	      null,
-	      'Codepen Projects'
-	    ),
-	    _react2.default.createElement(
-	      'ul',
-	      null,
-	      _react2.default.createElement(
-	        'li',
-	        null,
-	        _react2.default.createElement(
-	          'a',
-	          { href: 'http://codepen.io/uzeuze/full/GNgpPj/', target: '_blank' },
-	          'Hangman Game'
-	        )
-	      ),
-	      _react2.default.createElement(
-	        'li',
-	        null,
-	        _react2.default.createElement(
-	          'a',
-	          { href: 'http://codepen.io/uzeuze/full/xRbmWw/', target: '_blank' },
-	          'Library App'
-	        )
-	      ),
-	      _react2.default.createElement(
-	        'li',
-	        null,
-	        _react2.default.createElement(
-	          'a',
-	          { href: 'http://codepen.io/uzeuze/full/dOyGYN/', target: '_blank' },
-	          'To Do App'
-	        )
-	      ),
-	      _react2.default.createElement(
-	        'li',
-	        null,
-	        _react2.default.createElement(
-	          'a',
-	          { href: 'http://codepen.io/uzeuze/full/XKXKzY/', target: '_blank' },
-	          'Rembrandt Tribute Page'
-	        )
-	      ),
-	      _react2.default.createElement(
-	        'li',
-	        null,
-	        _react2.default.createElement(
-	          'a',
-	          { href: 'http://codepen.io/uzeuze/full/BzNWYG/', target: '_blank' },
-	          'Markdown Previewer'
-	        )
-	      ),
-	      _react2.default.createElement(
-	        'li',
-	        null,
-	        _react2.default.createElement(
-	          'a',
-	          { href: 'http://codepen.io/uzeuze/full/BzowMy/', target: '_blank' },
-	          'Camper Leaderboard'
-	        )
-	      ),
-	      _react2.default.createElement(
-	        'li',
-	        null,
-	        _react2.default.createElement(
-	          'a',
-	          { href: 'http://codepen.io/uzeuze/full/rLxxGE/', target: '_blank' },
-	          'Recipe Box'
-	        )
-	      ),
-	      _react2.default.createElement(
-	        'li',
-	        null,
-	        _react2.default.createElement(
-	          'a',
-	          { href: 'http://codepen.io/uzeuze/full/BzBYNL/', target: '_blank' },
-	          'Simon Game'
-	        )
-	      ),
-	      _react2.default.createElement(
-	        'li',
-	        null,
-	        _react2.default.createElement(
-	          'a',
-	          { href: 'http://codepen.io/uzeuze/full/EyYyQg/', target: '_blank' },
-	          'Tic Tac Toe Game'
-	        )
-	      ),
-	      _react2.default.createElement(
-	        'li',
-	        null,
-	        _react2.default.createElement(
-	          'a',
-	          { href: 'http://codepen.io/uzeuze/full/dMxaPb/', target: '_blank' },
-	          'Pomodoro Clock'
-	        )
-	      ),
-	      _react2.default.createElement(
-	        'li',
-	        null,
-	        _react2.default.createElement(
-	          'a',
-	          { href: 'https://codepen.io/uzeuze/full/aNedqR/', target: '_blank' },
-	          'JavaScript Calculator'
-	        )
-	      ),
-	      _react2.default.createElement(
-	        'li',
-	        null,
-	        _react2.default.createElement(
-	          'a',
-	          { href: 'http://codepen.io/uzeuze/full/RaOKEP/', target: '_blank' },
-	          'Wikipedia Viewer'
-	        )
-	      ),
-	      _react2.default.createElement(
-	        'li',
-	        null,
-	        _react2.default.createElement(
-	          'a',
-	          { href: 'http://codepen.io/uzeuze/full/ONdWzm/', target: '_blank' },
-	          'Local Weather App'
-	        )
-	      ),
-	      _react2.default.createElement(
-	        'li',
-	        null,
-	        _react2.default.createElement(
-	          'a',
-	          { href: 'http://codepen.io/uzeuze/full/BzjVaP/', target: '_blank' },
-	          'Random Quote Machine'
-	        )
-	      )
-	    )
-	  );
-	}
+	      );
+	    }
+	  }]);
+	
+	  return Home;
+	}(_react.Component);
 	
 	exports.default = Home;
 
 /***/ },
-/* 504 */
+/* 507 */
 /*!*************************************!*\
   !*** ./components/PageNotFound.jsx ***!
   \*************************************/
@@ -48852,7 +48628,7 @@
 	exports.default = PageNotFound;
 
 /***/ },
-/* 505 */
+/* 508 */
 /*!*********************************!*\
   !*** ./components/Articles.jsx ***!
   \*********************************/
@@ -48950,7 +48726,7 @@
 	exports.default = Articles;
 
 /***/ },
-/* 506 */
+/* 509 */
 /*!********************************!*\
   !*** ./components/Contact.jsx ***!
   \********************************/
@@ -49015,7 +48791,7 @@
 	}
 
 /***/ },
-/* 507 */
+/* 510 */
 /*!******************************************!*\
   !*** ./components/articles/ToDoList.jsx ***!
   \******************************************/
@@ -49033,7 +48809,7 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _marked = __webpack_require__(/*! marked */ 508);
+	var _marked = __webpack_require__(/*! marked */ 511);
 	
 	var _marked2 = _interopRequireDefault(_marked);
 	
@@ -49084,7 +48860,7 @@
 	};
 
 /***/ },
-/* 508 */
+/* 511 */
 /*!********************************!*\
   !*** ./~/marked/lib/marked.js ***!
   \********************************/
@@ -50380,7 +50156,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
 
 /***/ },
-/* 509 */
+/* 512 */
 /*!*********************************************!*\
   !*** ./components/articles/HangmanGame.jsx ***!
   \*********************************************/
@@ -50398,7 +50174,7 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _marked = __webpack_require__(/*! marked */ 508);
+	var _marked = __webpack_require__(/*! marked */ 511);
 	
 	var _marked2 = _interopRequireDefault(_marked);
 	
@@ -50449,7 +50225,7 @@
 	};
 
 /***/ },
-/* 510 */
+/* 513 */
 /*!********************************************!*\
   !*** ./components/articles/LibraryApp.jsx ***!
   \********************************************/
@@ -50467,7 +50243,7 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _marked = __webpack_require__(/*! marked */ 508);
+	var _marked = __webpack_require__(/*! marked */ 511);
 	
 	var _marked2 = _interopRequireDefault(_marked);
 	
@@ -50518,7 +50294,7 @@
 	};
 
 /***/ },
-/* 511 */
+/* 514 */
 /*!**************************************************!*\
   !*** ./components/articles/RomanConverterAPI.js ***!
   \**************************************************/
@@ -50536,7 +50312,7 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _marked = __webpack_require__(/*! marked */ 508);
+	var _marked = __webpack_require__(/*! marked */ 511);
 	
 	var _marked2 = _interopRequireDefault(_marked);
 	
@@ -50587,219 +50363,89 @@
 	};
 
 /***/ },
-/* 512 */
-/*!***********************************************!*\
-  !*** ./~/react-router-bootstrap/lib/index.js ***!
-  \***********************************************/
-/***/ function(module, exports, __webpack_require__) {
+/* 515 */,
+/* 516 */
+/*!*************************************!*\
+  !*** ./components/projects_data.js ***!
+  \*************************************/
+/***/ function(module, exports) {
 
 	'use strict';
 	
-	exports.__esModule = true;
-	exports.LinkContainer = exports.IndexLinkContainer = undefined;
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	var projects = [{
+	  'image-name': 'papirus',
+	  title: 'Papirus App',
+	  url: 'http://www.papirusapp.com/'
+	}, {
+	  'image-name': 'voting-app',
+	  title: 'Voting App',
+	  url: 'http://polls-uzeuze.herokuapp.com/'
+	}, {
+	  'image-name': 'uzenerji',
+	  title: 'Uz-Enerji',
+	  url: 'http://www.uz-energy.com/'
+	}, {
+	  'image-name': 'rembrandt-tribute',
+	  title: 'Rembrandt Tribute',
+	  url: 'http://codepen.io/uzeuze/full/XKXKzY/'
+	}, {
+	  'image-name': 'hangman',
+	  title: 'Hangman Game',
+	  url: 'http://codepen.io/uzeuze/full/GNgpPj/'
+	}, {
+	  'image-name': 'library',
+	  title: 'Library UI',
+	  url: 'http://codepen.io/uzeuze/full/xRbmWw/'
+	}, {
+	  'image-name': 'calculator',
+	  title: 'Calculator',
+	  url: 'https://codepen.io/uzeuze/full/aNedqR/'
+	}, {
+	  'image-name': 'pomodoro',
+	  title: 'Pomodoro Clock',
+	  url: 'http://codepen.io/uzeuze/full/dMxaPb/'
+	}, {
+	  'image-name': 'todo',
+	  title: 'To-Do List',
+	  url: 'http://codepen.io/uzeuze/full/dOyGYN/'
+	}, {
+	  'image-name': 'quote-generator',
+	  title: 'Quote Generator',
+	  url: 'http://codepen.io/uzeuze/full/BzjVaP/'
+	}, {
+	  'image-name': 'tictactoe',
+	  title: 'Tic-Tac-Toe',
+	  url: 'http://codepen.io/uzeuze/full/EyYyQg/'
+	}, {
+	  'image-name': 'markdown-previewer',
+	  title: 'Markdown Previewer',
+	  url: 'http://codepen.io/uzeuze/full/BzNWYG/'
+	}, {
+	  'image-name': 'camper-leaderboard',
+	  title: 'Camper Leaderboard',
+	  url: 'http://codepen.io/uzeuze/full/BzowMy/'
+	}, {
+	  'image-name': 'weather-api',
+	  title: 'WEATHER API',
+	  url: 'http://codepen.io/uzeuze/full/ONdWzm/'
+	}, {
+	  'image-name': 'wikipedia-viewer',
+	  title: 'Wikipedia Viewer',
+	  url: 'http://codepen.io/uzeuze/full/RaOKEP/'
+	}, {
+	  'image-name': 'simon-game',
+	  title: 'Simon Game',
+	  url: 'http://codepen.io/uzeuze/full/BzBYNL/'
+	}, {
+	  'image-name': 'recipe-box',
+	  title: 'Recipe Box',
+	  url: 'http://codepen.io/uzeuze/full/rLxxGE/'
+	}];
 	
-	var _IndexLinkContainer2 = __webpack_require__(/*! ./IndexLinkContainer */ 513);
-	
-	var _IndexLinkContainer3 = _interopRequireDefault(_IndexLinkContainer2);
-	
-	var _LinkContainer2 = __webpack_require__(/*! ./LinkContainer */ 514);
-	
-	var _LinkContainer3 = _interopRequireDefault(_LinkContainer2);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	exports.IndexLinkContainer = _IndexLinkContainer3.default;
-	exports.LinkContainer = _LinkContainer3.default;
-
-/***/ },
-/* 513 */
-/*!************************************************************!*\
-  !*** ./~/react-router-bootstrap/lib/IndexLinkContainer.js ***!
-  \************************************************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	exports.__esModule = true;
-	
-	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-	
-	var _react = __webpack_require__(/*! react */ 1);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	var _LinkContainer = __webpack_require__(/*! ./LinkContainer */ 514);
-	
-	var _LinkContainer2 = _interopRequireDefault(_LinkContainer);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-	
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-	
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-	
-	// Don't use a stateless function, to allow users to set a ref.
-	/* eslint-disable react/prefer-stateless-function */
-	var IndexLinkContainer = function (_React$Component) {
-	  _inherits(IndexLinkContainer, _React$Component);
-	
-	  function IndexLinkContainer() {
-	    _classCallCheck(this, IndexLinkContainer);
-	
-	    return _possibleConstructorReturn(this, _React$Component.apply(this, arguments));
-	  }
-	
-	  IndexLinkContainer.prototype.render = function render() {
-	    return _react2.default.createElement(_LinkContainer2.default, _extends({}, this.props, { onlyActiveOnIndex: true }));
-	  };
-	
-	  return IndexLinkContainer;
-	}(_react2.default.Component);
-	/* eslint-enable react/prefer-stateless-function */
-	
-	
-	exports.default = IndexLinkContainer;
-	module.exports = exports['default'];
-
-/***/ },
-/* 514 */
-/*!*******************************************************!*\
-  !*** ./~/react-router-bootstrap/lib/LinkContainer.js ***!
-  \*******************************************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	exports.__esModule = true;
-	
-	var _react = __webpack_require__(/*! react */ 1);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
-	
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-	
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-	
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; } // This is largely taken from react-router/lib/Link.
-	
-	function isLeftClickEvent(event) {
-	  return event.button === 0;
-	}
-	
-	function isModifiedEvent(event) {
-	  return !!(event.metaKey || event.altKey || event.ctrlKey || event.shiftKey);
-	}
-	
-	function createLocationDescriptor(to, query, hash, state) {
-	  if (query || hash || state) {
-	    return { pathname: to, query: query, hash: hash, state: state };
-	  }
-	
-	  return to;
-	}
-	
-	var propTypes = {
-	  onlyActiveOnIndex: _react2.default.PropTypes.bool.isRequired,
-	  to: _react2.default.PropTypes.oneOfType([_react2.default.PropTypes.string, _react2.default.PropTypes.object]).isRequired,
-	  query: _react2.default.PropTypes.string,
-	  hash: _react2.default.PropTypes.string,
-	  state: _react2.default.PropTypes.object,
-	  action: _react2.default.PropTypes.oneOf(['push', 'replace']).isRequired,
-	  onClick: _react2.default.PropTypes.func,
-	  active: _react2.default.PropTypes.bool,
-	  target: _react2.default.PropTypes.string,
-	  children: _react2.default.PropTypes.node.isRequired
-	};
-	
-	var contextTypes = {
-	  router: _react2.default.PropTypes.object
-	};
-	
-	var defaultProps = {
-	  onlyActiveOnIndex: false,
-	  action: 'push'
-	};
-	
-	var LinkContainer = function (_React$Component) {
-	  _inherits(LinkContainer, _React$Component);
-	
-	  function LinkContainer() {
-	    var _temp, _this, _ret;
-	
-	    _classCallCheck(this, LinkContainer);
-	
-	    for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
-	      args[_key] = arguments[_key];
-	    }
-	
-	    return _ret = (_temp = (_this = _possibleConstructorReturn(this, _React$Component.call.apply(_React$Component, [this].concat(args))), _this), _this.onClick = function (event) {
-	      var _this$props = _this.props;
-	      var to = _this$props.to;
-	      var query = _this$props.query;
-	      var hash = _this$props.hash;
-	      var state = _this$props.state;
-	      var children = _this$props.children;
-	      var onClick = _this$props.onClick;
-	      var target = _this$props.target;
-	      var action = _this$props.action;
-	
-	
-	      if (children.props.onClick) {
-	        children.props.onClick(event);
-	      }
-	
-	      if (onClick) {
-	        onClick(event);
-	      }
-	
-	      if (target || event.defaultPrevented || isModifiedEvent(event) || !isLeftClickEvent(event)) {
-	        return;
-	      }
-	
-	      event.preventDefault();
-	
-	      _this.context.router[action](createLocationDescriptor(to, query, hash, state));
-	    }, _temp), _possibleConstructorReturn(_this, _ret);
-	  }
-	
-	  LinkContainer.prototype.render = function render() {
-	    var router = this.context.router;
-	    var _props = this.props;
-	    var onlyActiveOnIndex = _props.onlyActiveOnIndex;
-	    var to = _props.to;
-	    var children = _props.children;
-	
-	    var props = _objectWithoutProperties(_props, ['onlyActiveOnIndex', 'to', 'children']);
-	
-	    props.onClick = this.onClick;
-	
-	    // Ignore if rendered outside Router context; simplifies unit testing.
-	    if (router) {
-	      props.href = router.createHref(to);
-	
-	      if (props.active == null) {
-	        props.active = router.isActive(to, onlyActiveOnIndex);
-	      }
-	    }
-	
-	    return _react2.default.cloneElement(_react2.default.Children.only(children), props);
-	  };
-	
-	  return LinkContainer;
-	}(_react2.default.Component);
-	
-	LinkContainer.propTypes = propTypes;
-	LinkContainer.contextTypes = contextTypes;
-	LinkContainer.defaultProps = defaultProps;
-	
-	exports.default = LinkContainer;
-	module.exports = exports['default'];
+	exports.default = projects;
 
 /***/ }
 /******/ ]);
