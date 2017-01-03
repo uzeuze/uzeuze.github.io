@@ -11,7 +11,7 @@
   color: #fff !important;
 }
 
-.navbar a:hover {
+.navbar li a:hover {
   color: #c0a062 !important;
 }
 
@@ -92,6 +92,33 @@
   font-size: 28px;
 }
 
+.btn-projects {
+  background-color: #FF9800;
+  padding: 12px 24px !important;
+  color: #fff;
+}
+
+.Home__footer {
+  margin-top: 40px;
+  background-color: #c0a062;
+  min-height: 250px;
+  padding: 20px;
+}
+
+.Home__footer_title {
+  color: #fff;
+}
+
+.Home__footer_subtitle {
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+
+.Home_footer_button, .Home_footer_button:hover {
+  background-color: #161616;
+  color: #fff !important;
+  padding: 12px 24px !important;
+}
 
 #papirus {
   background-image: url(../static/papirus.png);

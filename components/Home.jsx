@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Grid, Row, Col, Glyphicon } from 'react-bootstrap';
 import projectsData from './projects_data';
+import { Link } from 'react-router';
 
 class Home extends Component {
   constructor() {
@@ -51,12 +52,17 @@ class Home extends Component {
             </Row>
           </Grid>
           <button
-            className="btn btn-warning"
+            className="btn btn-projects"
             onClick={() => this.setState({ showProjects: !this.state.showProjects })}
           >
             { this.state.showProjects ? 'SHOW LESS' : 'ALL PROJECTS' }
           </button>
         </section>
+        <footer className="Home__footer text-center">
+          <h2 className="Home__footer_title">GET IN TOUCH</h2>
+          <p className="Home__footer_subtitle">If you want to work with me on one of your digital projects, get in touch with me through the button below.</p>
+          <Link to="/contact" className="btn Home_footer_button">CONTACT ME</Link>
+        </footer>
       </div>
     );
   }
