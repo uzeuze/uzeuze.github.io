@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { Grid, Row, Col } from 'react-bootstrap';
-import projects_data from './projects_data';
+import { Grid, Row, Col, Glyphicon } from 'react-bootstrap';
+import projectsData from './projects_data';
 
 class Home extends Component {
   constructor() {
@@ -12,9 +12,13 @@ class Home extends Component {
   renderProject(project) {
     return (
       <Col md={6} key={project.url}>
-        <a href={project.url} target="_blank">
+        <a className="Link__project" href={project.url} target="_blank">
           <div className="Project__item" id={project['image-name']}>
-            {project.title}
+            <div className="Project__item_overlay">
+              <div className="Project__item_link_icon">
+                <Glyphicon glyph="link" className="Project__item_glyph" />
+              </div>
+            </div>
           </div>
         </a>
         <h4 className="Project__item_title">{project.title}</h4>
@@ -25,9 +29,9 @@ class Home extends Component {
   render() {
     let projects;
     if (this.state.showProjects) {
-      projects = projects_data;
+      projects = projectsData;
     } else {
-      projects = projects_data.slice(0,4);
+      projects = projectsData.slice(0,4);
     }
     return (
       <div className="Home">

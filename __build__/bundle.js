@@ -48499,11 +48499,19 @@
 	        { md: 6, key: project.url },
 	        _react2.default.createElement(
 	          'a',
-	          { href: project.url, target: '_blank' },
+	          { className: 'Link__project', href: project.url, target: '_blank' },
 	          _react2.default.createElement(
 	            'div',
 	            { className: 'Project__item', id: project['image-name'] },
-	            project.title
+	            _react2.default.createElement(
+	              'div',
+	              { className: 'Project__item_overlay' },
+	              _react2.default.createElement(
+	                'div',
+	                { className: 'Project__item_link_icon' },
+	                _react2.default.createElement(_reactBootstrap.Glyphicon, { glyph: 'link', className: 'Project__item_glyph' })
+	              )
+	            )
 	          )
 	        ),
 	        _react2.default.createElement(

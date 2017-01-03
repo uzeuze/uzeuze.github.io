@@ -57,12 +57,41 @@
   color: #fff;
 }
 
+.Link__project {
+  color: transparent;
+}
+
+.Link__project:hover {
+  color: #fff;
+}
+
 .Project__item {
   width: 420px;
   height: 200px;
   background-size: cover;
   margin: 25px auto 0 auto;
 }
+
+.Project__item_overlay {
+  height: 100%;
+  width: 100%;
+  background-color: transparent;
+  display: table;
+}
+
+.Project__item_overlay:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.Project__item_link_icon {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.Project__item_glyph {
+  font-size: 28px;
+}
+
 
 #papirus {
   background-image: url(../static/papirus.png);
