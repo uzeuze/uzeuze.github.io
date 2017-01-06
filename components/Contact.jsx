@@ -4,7 +4,7 @@ import {Form, FormGroup, ControlLabel, FormControl, Button} from 'react-bootstra
 
 export default function Contact() {
   return (
-    <div>
+    <div className="Contact container">
       <h1>Contact</h1>
         <Form action="https://formspree.io/egemencanuze@gmail.com" method="POST">
           <FormGroup>

@@ -15,6 +15,11 @@ const projects = [
     url: 'http://www.uz-energy.com/',
   },
   {
+    'image-name': 'nightlife',
+    title: 'Nightlife Coordintaion',
+    url: 'https://nightlife-uzeuze.herokuapp.com/',
+  },
+  {
     'image-name': 'rembrandt-tribute',
     title: 'Rembrandt Tribute',
     url: 'http://codepen.io/uzeuze/full/XKXKzY/',
