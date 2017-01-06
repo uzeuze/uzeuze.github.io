@@ -16,7 +16,7 @@ const projects = [
   },
   {
     'image-name': 'nightlife',
-    title: 'Nightlife Coordintaion',
+    title: 'Nightlife Coordination',
     url: 'https://nightlife-uzeuze.herokuapp.com/',
   },
   {
